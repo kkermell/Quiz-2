@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../../styles/index.css" />
+  </head>
+  <body class="page">
+    <main class="main-q">
+      <h2 class="head header">Золотой билет на шоколадную фабрику 500</h2>
+      <p class="body que qq">
+        Из каких этапов состоит получение лицензии на приобретение оружия?
+        <span class="answer-hidden"
+          >Ответ: <br />
+          1. Получение охотничьего билета (для охотничьего оружия). <br />
+          2. Получение заключения об отсутствии медицинских противопоказаний к
+          владению оружием. <br />
+          3. Обучение правилам безопасного обращения с оружием и сдача экзамена.
+          <br />
+          4. Приобретение сейфа для хранения оружия. <br />
+          5. Подача заявления о выдаче лицензии в органы
+          лицензионно-разрешительной работы (ОЛЛР).</span
+        >
+      </p>
+      <a href="../../index.html" class="body back">Вернуться</a>
+      <button class="body answer">Ответ</button>
+    </main>
+    <script>
+      const btn = document.querySelector(".answer");
+      const answer = document.querySelector(".answer-hidden");
+
+      btn.addEventListener("click", () => {
+        answer.classList.toggle("answer-is-on");
+      });
+    </script>
+  </body>
+</html>

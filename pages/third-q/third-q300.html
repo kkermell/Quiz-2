@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../../styles/index.css" />
+  </head>
+  <body class="page">
+    <main class="main-q">
+      <h2 class="head header">Вокруг себя 300</h2>
+      <p class="body que qq">
+        Вправе ли граждане РФ, награжденные гражданским огнестрельным оружием,
+        приобретать патроны к нему и на каком основании?
+        <span class="answer-hidden"
+          >Ответ: граждане Российской Федерации, награжденные гражданским
+          огнестрельным оружием, вправе приобретать патроны к нему на основании
+          (Постановление правительства от 21.07.1998 № 814 «О мерах по
+          регулированию оборота гражданского и служебного оружия и патронов к
+          нему на территории Российской Федерации»).</span
+        >
+      </p>
+      <a href="../../index.html" class="body back">Вернуться</a>
+      <button class="body answer">Ответ</button>
+    </main>
+    <script>
+      const btn = document.querySelector(".answer");
+      const answer = document.querySelector(".answer-hidden");
+
+      btn.addEventListener("click", () => {
+        answer.classList.toggle("answer-is-on");
+      });
+    </script>
+  </body>
+</html>
